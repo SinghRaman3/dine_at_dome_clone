@@ -1,0 +1,84 @@
+*{
+    padding: 0;margin: 0;
+    box-sizing: border-box;
+}
+
+
+.navbar .nav-item {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    border-left: 1px solid rgb(211, 208, 208);
+}
+
+.nav-item:nth-child(1) {
+    border: none;
+}
+
+.nav-link {
+    color: rgb(29, 29, 29);
+}
+
+.nav-link:hover {
+    color: #eaae3f;
+}
+
+.contact-hero{
+    height: 50vh;
+    background-image: url(../assets/contact-hero.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contact-us{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0 8rem 0;
+    font-size: .93rem;
+    font-family: sans-serif;
+}
+
+
+.contact-us>:nth-child(1){
+    font-size: 2.25rem;
+    /* font-family: ; */
+}
+
+footer {
+    display: flex;
+    font-size: .8rem;
+    justify-content: center;
+    background-color: #161a23;
+    color: #fbfbfb;
+    padding: 3rem 0;
+}
+
+.footer ul {
+    display: flex;
+    gap: 1.3rem;
+    align-items: center;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    color: #fbfbfb;
+}
+
+.footer ul li a:hover {
+    color: rgb(255, 182, 46);
+}
+
+@media screen and (max-width:768px) {
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer ul {
+        flex-wrap: wrap;
+    }
+}
